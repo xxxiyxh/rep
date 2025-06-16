@@ -1,0 +1,16 @@
+groups:
+- name: gollm-latency
+  rules:
+  - alert: HighP95Latency
+    expr: histogram_quantile(
+            0.95,
+            sum(rate(http_request_duration_seconds_bucket[5m])) by (le)
+          ) > 3
+    for: 5m
+    labels:
+      severity: page            # 供路由匹配
+    annotations:
+      summary:  "P95 响应时延 > 3s (持续 5 分钟)"
+      description: |
+        当前 95th 百分位延迟 = {{ $value }} 秒，
+        超过阈值 3 秒。

@@ -1,0 +1,20 @@
+route:
+  receiver: slack-critical
+  group_wait: 30s
+  group_interval: 2m
+  repeat_interval: 4h
+  routes:
+  - match:
+      severity: page
+    receiver: slack-critical
+
+receivers:
+- name: email-ops
+  email_configs:
+  - to: xxxiyxh@gmail.com
+    from: alert@gollm.local
+    smarthost: smtp.gmail.com:587
+    auth_username: xxxiyxh@gmail.com
+    auth_identity: xxxiyxh@gmail.com
+    #auth_password: "gmail-app-password"
+
