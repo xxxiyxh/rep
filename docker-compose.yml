@@ -2,7 +2,7 @@ version: "3.9"
 services:
   backend:
     #build: ./gollm-mini
-    image: ghcr.io/xxxiyxh/gollm-backend:latest
+    image: ghcr.io/xxxiyxh/rep/gollm-backend:latest
     container_name: gollm-backend
     restart: unless-stopped
     environment:
@@ -13,7 +13,7 @@ services:
 
   frontend:
     #build: ./gollm-ui
-    image: ghcr.io/xxxiyxh/gollm-frontend:latest
+    image: ghcr.io/xxxiyxh/rep/gollm-frontend:latest
     container_name: gollm-frontend
     restart: unless-stopped
     ports: ["3000:80"]
