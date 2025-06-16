@@ -1,0 +1,44 @@
+# 通用忽略
+.git
+.gitignore
+*.log
+*.tmp
+*.bak
+*.swp
+
+# 文档类
+README.md
+LICENSE
+CHANGELOG.md
+*.md
+
+# 数据 & 非源码资源
+*.json
+*.csv
+*.db
+*.sqlite
+*.pdf
+*.xlsx
+*.zip
+*.tar.gz
+
+# 前端构建产物
+node_modules
+dist
+
+# IDE、编辑器临时文件
+.vscode
+.idea
+.DS_Store
+.env.local
+.env.*
+
+# 测试和benchmark
+testdata/
+benchmark/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+gollm-mini

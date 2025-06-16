@@ -1,0 +1,18 @@
+:root{
+  --bg:#F5F7FA; --fg:#111827;
+  --primary:#6366F1; --accent:#14B8A6;
+}
+.dark{
+  --bg:#0E1117; --fg:#E5E7EB;
+  --primary:#8B7BFF; --accent:#06D6A0;
+}
+body{
+  background: var(--bg);
+  color:       var(--fg);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+:root{
+  --hover-scale: 1.04;
+  --hover-shadow: 0 2px 8px rgb(0 0 0 / .08);
+}

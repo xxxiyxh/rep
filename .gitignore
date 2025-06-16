@@ -1,0 +1,85 @@
+# === Golang ===
+/bin/
+/obj/
+/vendor/
+/*.exe
+/*.dll
+/*.so
+/*.dylib
+*.test
+*.out
+*.a
+*.o
+
+# IDE/debugging
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Go build cache
+**/pkg/
+**/cover.out
+
+# === Node/React/TypeScript ===
+# node_modules 包含依赖
+node_modules/
+# 构建产物
+dist/
+build/
+# 缓存文件
+.npm/
+.cache/
+.yarn/
+.pnpm-debug.log
+npm-debug.log*
+
+# React 项目配置缓存
+.env
+.env.*.local
+.env.local
+
+# Vite/Next/Parcel/CRA 产物
+.next/
+out/
+.vite/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+*.manifest
+*.spec
+*.log
+
+# 虚拟环境
+env/
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Poetry
+.poetry/
+
+# === System Files ===
+.DS_Store
+Thumbs.db
+
+# === VSCode ===
+.vscode/
+.history/
+
+# === Docker (如果你用了容器化) ===
+*.container
+*.pid
+*.pid.lock
+docker-compose.override.yml

@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  backend:
+    build: ./gollm-mini
+    container_name: gollm-backend
+    restart: unless-stopped
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434   # ✧ 关键
+    depends_on:
+      - hf-api
+    expose: [8888]
+
+  frontend:
+    build: ./gollm-ui
+    container_name: gollm-frontend
+    restart: unless-stopped
+    ports: ["3000:80"]
+    depends_on:
+      - backend
+
+  # ✧ 注释 / 删除 ollama 服务
+  # ollama:
+  #   image: dockerproxy.com/ollama/ollama:latest
+  #   container_name: ollama
+  #   restart: unless-stopped
+  #   expose: [11434]
+
+  hf-api:
+    build: ./hf-api
+    container_name: gollm-hf
+    restart: unless-stopped
+    expose: [8000]
