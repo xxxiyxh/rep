@@ -19,6 +19,12 @@ A **self‑hosted playground for Large Language Model (LLM) experimentation**. T
 
 ---
 
+## 🧪 Playground Display
+
+<img width="1512" height="902" alt="截屏2025-07-31 11 44 51" src="https://github.com/user-attachments/assets/ff124b91-b2fb-4792-8acc-b81ea5d7ba94" />
+
+---
+
 ## 🗂️ Repository Layout
 
 ```
