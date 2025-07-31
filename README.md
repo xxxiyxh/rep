@@ -33,7 +33,7 @@ rep/
 ├─ gollm-mini/        # Go backend (REST + SSE)
 ├─ gollm-ui/          # React + Vite front‑end
 ├─ hf-api/            # Lightweight FastAPI proxy for HuggingFace Inference Endpoints
-├─ ops/               # Kubernetes & Grafana dashboards, CI scripts, etc.
+├─ ops/               # Grafana dashboards, CI scripts, etc.
 │
 ├─ docker-compose.yml           # Dev stack (Postgres, Ollama, backend, UI)
 └─ docker-compose.observ.yml    # Optional observability add‑ons
